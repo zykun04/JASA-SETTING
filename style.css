@@ -1,0 +1,50 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-back {
+    display: inline-block;
+    background: #ff4d4d;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+.btn-back:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+h1 {
+    animation: pulse 2s infinite ease-in-out;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #004aad;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    margin: 10px;
+}
+.btn:hover {
+    background: #002b6b;
+}

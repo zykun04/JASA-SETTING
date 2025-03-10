@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Zykun Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        @keyframes rotateText {
+            0% { transform: rotateY(0deg); }
+            50% { transform: rotateY(180deg); }
+            100% { transform: rotateY(360deg); }
+        }
+
+        @keyframes pulseText {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        h1 {
+            display: inline-block;
+            animation: rotateText 5s linear infinite, pulseText 2s infinite;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .layanan {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 320px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #007bff;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .btn-red {
+            background: #dc3545;
+        }
+
+        .btn-red:hover {
+            background: #b02a37;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daftar Layanan Kami</h1>
+        <p>Solusi terbaik untuk konfigurasi dan optimasi jaringan Anda</p>
+    </header>
+    <div class="container">
+        <div class="layanan">
+            <div class="card">
+                <h3>Konfigurasi Dasar</h3>
+                <p>Setting IP, DHCP, NAT, Firewall dasar, dan pengaturan jaringan lokal.</p>
+                <strong>Harga: Rp 500.000</strong>
+                <a href="https://wa.me/6282114422054?text=Halo%20Zykun%20Network,%20saya%20ingin%20memesan%20layanan%20konfigurasi%20dasar." class="btn" target="_blank">Pesan Sekarang</a>
+            </div>
+            <div class="card">
+                <h3>Hotspot & Bandwidth</h3>
+                <p>Konfigurasi hotspot, limit bandwidth, user management, dan sistem voucher.</p>
+                <strong>Harga: Rp 700.000</strong>
+                <a href="https://wa.me/6282114422054?text=Halo%20Zykun%20Network,%20saya%20ingin%20memesan%20layanan%20hospot%20dan%20bandwidth." class="btn" target="_blank">Pesan Sekarang</a>
+            </div>
+            <div class="card">
+                <h3>VPN & Remote Access</h3>
+                <p>Setting VPN PPTP, L2TP/IPSec, OpenVPN, serta konfigurasi remote Mikrotik.</p>
+                <strong>Harga: Rp 200.000</strong>
+                <a href="https://wa.me/6282114422054?text=Halo%20Zykun%20Network,%20saya%20ingin%20memesan%20layanan%20VPN%20dan%20remote%20access." class="btn" target="_blank">Pesan Sekarang</a>
+            </div>
+            <div class="card">
+                <h3>Load Balancing & Failover</h3>
+                <p>Optimasi koneksi internet dengan load balancing dan backup jaringan otomatis.</p>
+                <strong>Harga: Rp 400.000</strong>
+                <a href="https://wa.me/6282114422054?text=Halo%20Zykun%20Network,%20saya%20ingin%20memesan%20layanan%20Load%20Balancing%20dan%20Failover." class="btn" target="_blank">Pesan Sekarang</a>
+            </div>
+            <div class="card">
+                <h3>Setting Router & Switch</h3>
+                <p>Konfigurasi router berbagai merek dan setting switch manageable.</p>
+                <strong>Harga: Rp 150.000</strong>
+                <a href="https://wa.me/6282114422054?text=Halo%20Zykun%20Network,%20saya%20ingin%20memesan%20layanan%20Setting%20Router%20dan%20Switch." class="btn" target="_blank">Pesan Sekarang</a>
+            </div>
+            <div class="card">
+                <h3>PPPoE untuk FTTH</h3>
+                <p>Konfigurasi PPPoE server & client untuk jaringan Fiber To The Home (FTTH).</p>
+                <strong>Harga: Rp 600.000</strong>
+                <a href="https://wa.me/6282114422054?text=Halo%20Zykun%20Network,%20saya%20ingin%20memesan%20layanan%20PPPoE%20untuk%20FTTH." class="btn" target="_blank">Pesan Sekarang</a>
+            </div>
+            <div class="card">
+                <h3>Jasa Setting Radio</h3>
+                <p>Konfigurasi radio wireless seperti UBNT, Cambium, dan perangkat lainnya.</p>
+                <strong>Harga: Rp 250.000</strong>
+                <a href="https://wa.me/6282114422054?text=Halo%20Zykun%20Network,%20saya%20ingin%20memesan%20layanan%20Jasa%20Setting%20Radio." class="btn" target="_blank">Pesan Sekarang</a>
+            </div>
+        </div>
+        <br>
+        <a href="index.html" class="btn btn-red">Kembali ke Beranda</a>
+        <a href="dokumentasi.html" class="btn">Lihat Dokumentasi</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Zykun Network. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
