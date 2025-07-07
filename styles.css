@@ -135,3 +135,90 @@ nav a:hover {
 .wa-float img {
   width: 100%;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0f0;
+}
+
+.btn-menu {
+  background: #6b8e23;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.hero {
+  background: url('mikrotik-bg.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #9acd32;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn-cta {
+  background: #9acd32;
+  color: #111;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-cta:hover {
+  background: #6b8e23;
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.wa-float img {
+  width: 100%;
+}
