@@ -90,15 +90,18 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
         .modal-content {
-            background: white;
-            padding: 20px;
-            margin: 10% auto;
+             background: white;
+             padding: 20px;
+            position: relative;
+             top: 50%;
+            transform: translateY(-50%);
+             margin: auto;
             width: 90%;
             max-width: 500px;
             border-radius: 10px;
-            text-align: center;
-            position: relative;
+             text-align: center;
         }
+
         .modal img {
             max-width: 100%;
             border-radius: 10px;
@@ -136,17 +139,17 @@
             <div class="card">
                 <h3>Konfigurasi Hotspot</h3>
                 <p>Dokumentasi lengkap cara setting hotspot di Mikrotik.</p>
-                <button class="btn" onclick="openModal('hotspot.jpg')">Lihat Detail</button>
+                <button class="btn" onclick="openModal('Photo/pppoe.jpg')">Lihat Detail</button>
             </div>
             <div class="card">
                 <h3>PPPoE Server</h3>
                 <p>Panduan konfigurasi PPPoE untuk jaringan FTTH.</p>
-                <button class="btn" onclick="openModal('pppoe.jpg')">Lihat Detail</button>
+                <button class="btn" onclick="openModal('Photo/ppoe.jpg')">Lihat Detail</button>
             </div>
             <div class="card">
                 <h3>Load Balancing</h3>
                 <p>Cara setting load balancing dan failover di Mikrotik.</p>
-                <button class="btn" onclick="openModal('load_balancing.jpg')">Lihat Detail</button>
+                <button class="btn" onclick="openModal('Photo/Hospot.jpg')">Lihat Detail</button>
             </div>
         </div>
 
