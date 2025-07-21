@@ -5,35 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zykun Network - Setting MikroTik</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: white;
+    }
+
+    header {
+      background-color: #111;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6b00;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: radial-gradient(circle, #222, #111);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #00d4ff;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      color: #ff6b00;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    .btn-cta {
+      background: #ff6b00;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-cta:hover {
+      background: #ffa733;
+    }
+
+    .wa-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .wa-float img {
+      height: 50px;
+      width: 50px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #888;
+      font-size: 14px;
+    }
+
+    img.logo {
+      height: 30px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
   <header>
-
+    <a href="#">
+      <img src="Photo/logozykun.png" alt="Logo" class="logo">
+    </a>
     <nav>
       <ul>
-        <li>
-          <li>
-        <a href="#">
-        <img src="Photo/logozykun.png" alt="Logo" style="height:30px; vertical-align: middle; margin-right: 5px;">
-        </a>
-        </li>
         <li><a href="layanan.html">Layanan</a></li>
         <li><a href="dokumentasi.html">Dokumentasi</a></li>
         <li><a href="kontak.html">Kontak</a></li>
         <li><a href="#">Panduan</a></li>
         <li><a href="#">Blog</a></li>
-        <li>
-</li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Spesialis Layanan Pengguna MikroTik</h1>
-    <h2>ZYKUN NETWORK</h2>
-    <p>Setting MikroTik | Cloud Userman | VPN Remote | PoE Center | Template Hotspot</p>
-    <a href="https://wa.me/6282114422054?text=Halo%2C+saya+butuh+setting+MikroTik" class="btn-cta">Hubungi Sekarang</a>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Spesialis Layanan MikroTik</h1>
+      <h2>ZYKUN NETWORK</h2>
+      <p>Setting MikroTik | Cloud Userman | VPN Remote | PoE Center | Template Hotspot</p>
+      <a href="https://wa.me/6282114422054?text=Halo%2C+saya+butuh+setting+MikroTik" class="btn-cta">Hubungi Sekarang</a>
+    </section>
+  </main>
 
   <a href="https://wa.me/6282114422054" class="wa-float" target="_blank">
     <img src="Photo/logowa.png" alt="WhatsApp">

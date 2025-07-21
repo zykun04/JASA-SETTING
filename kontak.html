@@ -1,147 +1,116 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jasa setting Mikrotik profesional di Pontianak. Konfigurasi jaringan, VPN, dan hotspot terbaik untuk bisnis Anda.">
-    <meta name="keywords" content="Mikrotik, Jaringan, VPN, Hotspot, Setting Router, IT Support">
-    <meta name="author" content="Zykun Network">
-    <meta property="og:title" content="Zykun Network - Jasa Setting Mikrotik">
-    <meta property="og:description" content="Jasa setting Mikrotik profesional di Pontianak. Konfigurasi jaringan, VPN, dan hotspot terbaik untuk bisnis Anda.">
-    <meta property="og:image" content="image/preview.png">
-    <meta property="og:url" content="https://zykunnetwork.com">
-    <title>Zykun Network - Jasa Setting Mikrotik</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="image/favicon.png">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f7fa;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #004aad, #002b6b);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #004aad;
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            margin: 10px;
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-        }
-        .btn:hover {
-            background: #002b6b;
-            transform: scale(1.05);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-        }
-        .btn-red {
-            background: #dc3545;
-        }
-        .kontak p {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 16px;
-            padding: 12px;
-            background: #eef2f3;
-            border-radius: 8px;
-            margin: 8px 0;
-        }
-        .kontak a {
-            text-decoration: none;
-            color: #004aad;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        .kontak a:hover {
-            color: #ffdd57;
-        }
-        footer {
-            background: #004aad;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 50px;
-            border-top: 4px solid #002b6b;
-        }
-        @media (max-width: 600px) {
-            .container {
-                width: 95%;
-                padding: 15px;
-            }
-            nav {
-                flex-direction: column;
-                gap: 5px;
-            }
-            .btn {
-                padding: 8px 15px;
-                font-size: 14px;
-            }
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - Zykun Network</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    .kontak-kartu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .kontak-card {
+      background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .kontak-card:hover {
+      transform: scale(1.05);
+    }
+
+    .kontak-card h3 {
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .kontak-card p {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .kontak-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .wa-btn {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .email-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .sosmed-btn {
+      display: block;
+      background-color: #004aad;
+      color: white;
+      margin: 6px 0;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .kontak-card {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Zykun Network</h1>
-        <p>Jasa Setting Mikrotik & Solusi Jaringan Profesional</p>
-        <nav>
-            <a href="index.html" class="btn btn-red">Beranda</a>
-            <a href="dokumentasi.html" class="btn">Dokumentasi</a>
-            <a href="layanan.html" class="btn">Layanan</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Hubungi Kami</h1>
+    <p>Kami siap bantu setting jaringan Anda</p>
+  </header>
 
-    <div class="container">
-        <div class="kontak" id="kontak">
-            <h3>Hubungi Kami</h3>
-            <p>📞 <strong>Telepon/WhatsApp:</strong> <a href="https://wa.me/6282114422054" target="_blank" aria-label="Hubungi kami melalui WhatsApp">+62 821-1442-2054</a></p>
-            <p>📧 <strong>Email:</strong> <a href="mailto:zykunnetwork@gail.com">zykunnetwork@gmail.com</a></p>
-            <p>📍 <strong>Alamat:</strong> Jl. Teknologi No.10, Pontianak, Kalimantan Barat, Indonesia</p>
-            <p>🌐 <strong>Website:</strong> <a href="https://zykunnetwork.com" target="_blank">www.zykunnetwork.com</a></p>
-            <p>🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/company/zykunnetwork" target="_blank">Zykun Network</a></p>
-            <p>📷 <strong>Instagram:</strong> <a href="https://instagram.com/zykun04" target="_blank">@zykun04</a></p>
-            <p>📘 <strong>Facebook:</strong> <a href="https://facebook.com/zykunnetwork" target="_blank">Zykun Net</a></p>
-        </div>
+  <div class="container">
+    <div class="kontak-kartu">
+      <div class="kontak-card">
+        <h3>WhatsApp</h3>
+        <p>Hubungi langsung melalui WhatsApp</p>
+        <a href="https://wa.me/6282114422054" target="_blank" class="wa-btn">+62 821-1442-2054</a>
+      </div>
+      <div class="kontak-card">
+        <h3>Email</h3>
+        <p>Kirim pertanyaan atau permintaan jasa ke email kami:</p>
+        <a href="mailto:zykunnetwork@gmail.com" class="email-btn">zykunnetwork@gmail.com</a>
+      </div>
+      <div class="kontak-card">
+        <h3>Alamat</h3>
+        <p>Jl. Teknologi No.10<br>Pontianak, Kalimantan Barat</p>
+      </div>
+      <div class="kontak-card">
+        <h3>Media Sosial</h3>
+        <a href="https://instagram.com/zykun04" class="sosmed-btn" target="_blank">Instagram</a>
+        <a href="https://facebook.com/zykunnetwork" class="sosmed-btn" target="_blank">Facebook</a>
+        <a href="https://linkedin.com/company/zykunnetwork" class="sosmed-btn" target="_blank">LinkedIn</a>
+      </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Zykun Network. All Rights Reserved.</p>
-    </footer>
+    <div class="btn-container">
+      <a href="index.html" class="btn btn-red">Beranda</a>
+      <a href="layanan.html" class="btn btn-green">Layanan</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Zykun Network. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
